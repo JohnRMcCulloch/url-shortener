@@ -1,0 +1,4 @@
+spring:
+    profiles: docker
+spring.redis.host: redis
+spring.redis.port: 6379

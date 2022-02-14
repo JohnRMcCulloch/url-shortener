@@ -8,6 +8,7 @@ This application currently has two database implementations. The first is a fake
 it is implemented via a List to store the URLs. The second implementation utilises a Redis cache data structure store.
 If ran locally will require a redis server to be running, alternatively docker-compose can be used to spin up a redis
 container configured to talk to the url-shortener application.
+
 To switch between the database implementations simply change the `@Qualifier` annotation value in the 
 `UrlServiceImplementation` class to match the fakeUrlDao `"fakeDao"` or 
 RedisDao `"redisDao"` `@Repository` annotation.

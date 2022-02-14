@@ -48,7 +48,7 @@ public class UrlServiceImplementation implements UrlService {
 
     private boolean isUrlValid(String url) {
         UrlValidator urlValidator = new UrlValidator(
-                new String[]{"hhtp", "https"}
+                new String[]{"http", "https"}
         );
         return urlValidator.isValid(url);
     }

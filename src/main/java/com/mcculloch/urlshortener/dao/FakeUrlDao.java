@@ -41,18 +41,17 @@ public class FakeUrlDao implements UrlDao {
         Optional<Url> urlToDestroy = DB.stream()
                 .filter(url -> shortenedUrl.equals(url.getShortenedUrl()))
                 .findFirst();
-        if(urlToDestroy.isEmpty()) {
+        if (urlToDestroy.isEmpty()) {
             return 0;
-        }else{
+        } else {
             DB.remove(urlToDestroy.get());
             return 1;
         }
     }
 
-
     @Override
     public List<Url> selectAllUrls() {
-        if(DB.isEmpty()){
+        if (DB.isEmpty()) {
             return null;
         }
         return DB;
