@@ -34,7 +34,6 @@ public class UrlController {
         try {
             urlResponse = urlService.generateShortenedUrl(urlDto);
         } catch (ValidatorException e) {
-            e.printStackTrace();
             return new ResponseEntity<String>("URL is not valid", HttpStatus.BAD_REQUEST);
         }
 
