@@ -7,6 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Fake database implementation of UrlDao
+ * Database defined as a List, intended to be used for local development
+ *
+ * @author johnmcculloch
+ */
 @Repository("fakeDao")
 public class FakeUrlDao implements UrlDao {
 

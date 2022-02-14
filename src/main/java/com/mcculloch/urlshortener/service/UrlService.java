@@ -4,6 +4,11 @@ import com.mcculloch.urlshortener.model.Url;
 import com.mcculloch.urlshortener.model.UrlDto;
 import org.apache.commons.validator.ValidatorException;
 
+/**
+ * UrlService interface containing abstract methods to build logical service layer
+ *
+ * @author johnmcculloch
+ */
 public interface UrlService {
 
     Url generateShortenedUrl(UrlDto urlDto) throws ValidatorException;

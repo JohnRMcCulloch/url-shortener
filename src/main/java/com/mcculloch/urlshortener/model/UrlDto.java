@@ -2,6 +2,11 @@ package com.mcculloch.urlshortener.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * UrlDto model represents data transaction object to encapsulate users url
+ *
+ * @author johnmcculloch
+ */
 public class UrlDto {
 
     private String url;

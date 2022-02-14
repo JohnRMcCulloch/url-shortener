@@ -12,6 +12,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * UrlService implementation of UrlService
+ * Defines the business rules and logic for the url shortener application
+ *
+ * @author johnmcculloch
+ */
 @Service
 public class UrlServiceImplementation implements UrlService {
 
@@ -66,7 +72,7 @@ public class UrlServiceImplementation implements UrlService {
 
     @Override
     public int deleteUrl(String shortUrl) {
-        if(shortUrl!= null && shortUrl.length() > 0){
+        if (shortUrl != null && shortUrl.length() > 0) {
             return urlDao.deleteUrl(shortUrl);
         }
         return 0;

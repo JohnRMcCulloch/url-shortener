@@ -1,5 +1,10 @@
 package com.mcculloch.urlshortener.model;
 
+/**
+ * Url Model representing data associated with url shortener
+ *
+ * @author johnmcculloch
+ */
 public class Url {
 
     private String originalUrl;

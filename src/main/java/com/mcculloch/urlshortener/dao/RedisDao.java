@@ -10,6 +10,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * Redis data structure store implementation of UrlDao
+ *
+ * @author johnmcculloch
+ */
 @Repository("redisDao")
 public class RedisDao implements UrlDao {
 

@@ -11,6 +11,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * REST Controller Class to expose url-shortener api end-points to client
+ *
+ * @author johnmcculloch
+ */
 @RequestMapping("api/v1/url")
 @RestController
 public class UrlController {
